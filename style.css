@@ -1,17 +1,71 @@
 :root {
   --link-color: white;
+  --link-active-color: #FF6C00;
+  --heading-color:white;
+  --text-font-family: "Open Sans", sans-serif;
+  --heading-font-family: "Raleway", sans-serif;
 }
 
 .global-header {
   background-color: hwb(9 20% 77%);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  font-family: var(--heading-font-family);
+}
+
+ul {
+  list-style-type: none;
+}
+
+.button {
+  color: var(--link-color);
+  font-size: 12px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.08px;
+  text-transform: uppercase;
+}
 
 .global-header .main-navigation a,
-.global-header .main-navigation a:visited {
+.global-header .main-navigation a:visited,
+.phone-number {
   color: var(--link-color);
+  font-size: 12px;
+  font-family: var(--text-font-family);
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.08px;
+  text-transform: uppercase;;
 }
 
 .global-header .main-navigation a.active {
-  color: red;
+  color: var(--link-active-color);
+}
+
+.global-header .social-links {
+  color: var(--link-active-color);
+  font-size: 11px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 2.2px;
+}
+
+.phone-number{
+  text-transform: uppercase;
+}
+
+.global-header .social-links.active{
+  color: var(--link-active-color);
 }
