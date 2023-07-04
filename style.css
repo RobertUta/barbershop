@@ -1,13 +1,10 @@
 :root {
-  --link-color: white;
+  --link-color: #ffffff;
   --link-active-color: #FF6C00;
-  --heading-color:white;
-  --text-font-family: "Open Sans", sans-serif;
-  --heading-font-family: "Raleway", sans-serif;
-}
+  --heading-color: #ffffff;
+  --text-font-family: 'Open Sans', sans-serif;
+  --heading-font-family: 'Raleway', sans-serif;
 
-.global-header {
-  background-color: hwb(9 20% 77%);
 }
 
 h1,
@@ -27,12 +24,17 @@ ul {
 .button {
   color: var(--link-color);
   font-size: 12px;
-  font-family: Open Sans;
+  font-family: var(--text-font-family);
   font-style: normal;
   font-weight: 600;
   line-height: normal;
   letter-spacing: 1.08px;
   text-transform: uppercase;
+  background-color: transparent;
+}
+
+.global-header {
+  background-color: #333333;
 }
 
 .global-header .main-navigation a,
@@ -44,8 +46,8 @@ ul {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  letter-spacing: 1.08px;
-  text-transform: uppercase;;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
 }
 
 .global-header .main-navigation a.active {
@@ -53,7 +55,7 @@ ul {
 }
 
 .global-header .social-links {
-  color: var(--link-active-color);
+  color: var(--link-color);
   font-size: 11px;
   font-family: Open Sans;
   font-style: normal;
@@ -62,10 +64,24 @@ ul {
   letter-spacing: 2.2px;
 }
 
-.phone-number{
+.global-header .social-links.active {
+  color: var(--link-active-color);
+}
+
+.phone-number {
   text-transform: uppercase;
 }
 
-.global-header .social-links.active{
-  color: var(--link-active-color);
+.hero-heading {
+  color: var(--heading-color);
+  font-size: 72px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 3.6px; 
+}
+
+.hero-section {
+  background-color: #363636;
 }
